@@ -1,0 +1,192 @@
+html, body {
+  margin:0px;
+  height:100%;
+  overflow: hidden;
+  }
+.pavadinimas{
+  font-family: 'Play', sans-serif;
+  font-size: 35px;
+  text-align: center;
+  transition: transform 0.5s ease-in-out 100ms;
+}
+.pavadinimas:hover{
+  color: #78ffd6;
+  transform: scale(1.1);
+}
+.pagrindinis-box{
+  display: flex;
+  align-items: center;
+  height: 60vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vh;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: #fff;
+  border-width: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(35px);
+  position: relative;
+}
+.klaipeda-tekstas1, .klaipeda-tekstas2, .klaipeda-tekstas3{
+  padding-right: 300px;
+  position: absolute;
+  font-family: 'Play', sans-serif;
+  font-size: 40px;
+  margin-top: -80px;
+  margin-bottom: 0px;
+}
+.klaipeda-tekstas2{
+  margin-top: 0px;
+  opacity: 0.4;
+  -webkit-text-stroke: 1.6px black;
+  color: transparent;
+}
+.klaipeda-tekstas3{
+  margin-top: 80px;
+  opacity: 0.1;
+  -webkit-text-stroke: 1.6px black;
+  color: transparent;
+}
+.klaipeda-tekstas2:hover, .klaipeda-tekstas1:hover, .klaipeda-tekstas3:hover{
+  -webkit-text-stroke: 1.6px #78ffd6;
+}
+
+/* MYGTUKAI */
+.temperatura-mygtukas, .vejas-mygtukas, .krituliai-mygtukas, .papildoma-mygtukas{
+  font-family: 'Play', sans-serif;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-left: 0px;
+  height: 30px;
+  width: 160px;
+}
+.mygtukai-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 725px;
+  left: 50%;
+  margin: auto;
+  margin-top: -50px;
+}
+.temperatura-mygtukas:hover, .vejas-mygtukas:hover, .krituliai-mygtukas:hover, .papildoma-mygtukas:hover{
+  color: #78ffd6;
+  background-color: #403f3f;
+}
+.temperatura-mygtukas:after, .vejas-mygtukas:after, .krituliai-mygtukas:after, .papildoma-mygtukas:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0px;
+  left: 0;
+  background-color: #78ffd6;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.temperatura-mygtukas:hover:after, .vejas-mygtukas:hover:after, .krituliai-mygtukas:hover:after, .papildoma-mygtukas:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.temperatura-mygtukas, .vejas-mygtukas, .krituliai-mygtukas, .papildoma-mygtukas{
+  display: inline-block;
+  position: relative;
+}
+
+.pavadinimas-flex{
+  display: flex;
+  justify-content: center;
+}
+
+.visi-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  z-index: 1;
+}
+.saule-logo, .lietus-logo, .dregna-logo, .naktis-logo, .vejas-logo{
+  position: absolute;
+  z-index: 1;
+  height: 100px;
+  width: 100px;
+  transition: transform 0.5s ease-in-out 100ms;
+}
+.saule-logo:hover, .lietus-logo:hover, .dregna-logo:hover, .naktis-logo:hover, .vejas-logo:hover{
+  transform: scale(1.5);
+}
+.oro-kokybe:hover, .max-greitis:hover, .dregme:hover{
+  -webkit-text-stroke: 1.6px #78ffd6;
+}
+
+.oro-kokybe, .max-greitis, .dregme{
+  padding-right: 300px;
+  position: absolute;
+  font-family: 'Play', sans-serif;
+  font-size: 40px;
+  margin-top: -90px;
+  margin-bottom: 0px;
+  margin-left: 40px;
+}
+.dregme{
+  margin-top: 0px;
+}
+.oro-kokybe{
+  margin-top: 90px;
+}
+.oro-slegis-skaicius, .max-greitis-skaicius, .dregme-skaicius{
+  font-family: 'Play', sans-serif;
+  font-size: 40px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 200px;
+  -webkit-text-stroke: black 2px;
+  color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.apacioje-tekstas{
+  font-family: 'Play', sans-serif;
+  bottom: 0px;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.apacioje-tekstas:hover{
+  color: #78ffd6;
+}
+.main-info-box{
+  margin-left: auto;
+  margin-right: auto;
+  height: 140px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.laipsniai-main{
+  font-family: 'Play', sans-serif;
+  font-size: 80px;
+  margin-top: 70px;
+  margin-left: 200px;
+}
